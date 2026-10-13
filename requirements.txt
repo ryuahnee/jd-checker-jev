@@ -1,0 +1,3 @@
+streamlit==1.65.0
+typesafe-sdk==0.7.4
+python-dotenv
