@@ -49,12 +49,12 @@ st.caption("공고를 붙여넣으면 내 조건과 맞는지 항목별로 체�
 st.sidebar.header("내 프로필")
 stack = st.sidebar.text_area(
     "기술스택",
-    "Java, Spring Boot 백엔드 / Airflow 데이터 파이프라인 / data 정합성 / SQL",
+    "예: Java, Spring Boot / SQL / 데이터 파이프라인",
     height=100,
 )
-career = st.sidebar.text_input("경력", "2년6개월 차")
-location = st.sidebar.text_input("근무지", "서울 또는 경기도")
-salary = st.sidebar.text_input("연봉", "4500만원 이상 희망")
+career = st.sidebar.text_input("경력", "예: 3년 차")
+location = st.sidebar.text_input("근무지", "예: 서울")
+salary = st.sidebar.text_input("연봉", "예: 4000만원 이상")
 me = f"- 기술스택: {stack}\n- 경력: {career}\n- 근무지: {location}\n- 연봉: {salary}"
 
 job_text = st.text_area("채용 공고 붙여넣기", height=280, placeholder="공고 전문을 여기에 붙여넣으세요")
